@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  --HEADER--  */
+
+.header{
+    background-color: burlywood;
+    height: 20vh;
+}
+.blocki{
+    background-color: rgb(240, 214, 181);
+    border: solid 3px;
+    display: inline-block;
+} 
+
+.flexPadre{
+    display: flex;
+    background-color: burlywood;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    right: 5px;
+    top: 32px;
+    position: relative;
+}
+
+.flexPadre span{
+    padding: 5px;
+    border: black solid 2px;
+    margin: 2px;
+}
+
+.flexPadre a{
+    text-decoration: none;
+    border: black;
+}
+
+.flexPadre a:hover{
+    color: white;
+}
+
+/*  --MAIN-- */
+
+.main{
+    background-color: bisque;
+    height: 70vh;
+}
+
+.wpp{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 5px;
+    right: 5px;
+}
+
+.container{
+    margin: auto;
+    width: 1200px;
+    height: 550px;
+}
+
+
+ul .slider{
+    position: relative;
+    width: 1200px;
+    height: 550px;
+}
+.slider li{
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+.slider img{
+    width: 1200px;
+    height: 550px;
+    object-fit: cover;
+}
+.slider li:first-child{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    height: 110%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.slider li:target{
+    opacity: 1;
+}
+
+.block{
+    background-color: burlywood;
+    display: inline-block;
+    border: solid 5px;
+}
+
+.indumentaria1{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.calzado{
+    background-color: white;
+    color: black;
+    padding: 0%;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.calzado1{
+    padding: 5px;
+}
+
+.ropa{
+    background-color: white;
+    color: black;
+    padding: 0%;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ropa1{
+    padding: 5px;
+}
+
+.accesorios{
+    background-color: white;
+    color: black;
+    padding: 0%;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.accesorios1{
+    padding: 5px;
+}
+
+.verano{
+    background-color: white;
+    color: black;
+    padding: 0%;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.invierno{
+    background-color: white;
+    color: black;
+    padding: 0%;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.modeloHombre{
+    position: absolute;
+    right: 80px;
+    top: 250px;
+}
+
+.modeloMujer{
+    position: absolute;
+    right: 80px;
+    top: 250px;
+}
+
+.ropaInvierno{
+    position: absolute;
+    right: 80px;
+    top: 250px;
+}
+
+.ropaVerano{
+    position: absolute;
+    right: 180px;
+    top: 550px;
+}
+
+.grid1{
+    display: grid;
+    
+}
+/*  --FOOTER--  */
+
+.footer{
+    background-color: burlywood;
+    height: 10vh;
+    width: 100%;
+}
+
+.inline{
+    background-color: burlywood;
+    display: inline;
+}
+
+.inline img{
+    height: 40px;
+    width: 40px;
+    list-style: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+/*  --ETIQUETAS--  */
+
+span a{
+    color: black;
+}
+
+img{
+    width: 400px;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

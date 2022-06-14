@@ -71,8 +71,8 @@
 
 .flexPadre span {
     padding: 5px;
-    border: black solid 2px;
     margin: 2px;
+    font-size: 1.5rem;
 }
 
 .flexPadre a {
@@ -89,6 +89,24 @@
 .main {
     background-color: bisque;
     height: 70vh;
+}
+
+.mainContact{
+    display: grid;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMYoKQIx6Bneed6rxTk2P_ojCyYoyHc-IFbdSg=w1080-h608-p-no-v0);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(85%);
+    justify-items: center;
+    align-items: center;
+}
+
+.mainContact div{
+    border: solid 2px;
+    background-color: burlywood;
+    text-align: center;
+    padding: .5rem;
 }
 
 .wpp {

@@ -1,55 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+/*  --GRID-- */
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
 /*  --HEADER--  */
 
-.header{
+.header {
+    display: flex;
     background-color: burlywood;
     height: 20vh;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.blocki{
+
+.logo{
+    border: solid 1px;
+    height: 8rem;
+    width: 8rem;
+}
+
+.blocki {
     background-color: rgb(240, 214, 181);
     border: solid 3px;
     display: inline-block;
-} 
+    padding: .5rem;
 
-.flexPadre{
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10rem;
+    justify-content: space-around;
+}
+
+.flexPadre {
     display: flex;
     background-color: burlywood;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
-    right: 5px;
-    top: 32px;
-    position: relative;
 }
 
-.flexPadre span{
+.flexPadre span {
     padding: 5px;
     border: black solid 2px;
     margin: 2px;
 }
 
-.flexPadre a{
+.flexPadre a {
     text-decoration: none;
     border: black;
 }
 
-.flexPadre a:hover{
+.flexPadre a:hover {
     color: white;
 }
 
 /*  --MAIN-- */
 
-.main{
+.main {
     background-color: bisque;
     height: 70vh;
 }
 
-.wpp{
+.wpp {
     position: fixed;
     width: 65px;
     height: 65px;
@@ -57,35 +99,38 @@
     right: 5px;
 }
 
-.container{
+.container {
     margin: auto;
     width: 1200px;
     height: 550px;
 }
 
 
-ul .slider{
+ul .slider {
     position: relative;
     width: 1200px;
     height: 550px;
 }
-.slider li{
+
+.slider li {
     position: absolute;
     opacity: 0;
     width: inherit;
     height: inherit;
     transition: opacity .5s;
 }
-.slider img{
+
+.slider img {
     width: 1200px;
     height: 550px;
     object-fit: cover;
 }
-.slider li:first-child{
+
+.slider li:first-child {
     opacity: 1;
 }
 
-.menu{
+.menu {
     text-align: center;
     margin: 20px;
     display: flex;
@@ -94,12 +139,12 @@ ul .slider{
     justify-content: center;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     text-align: center;
 }
 
-.menu a{
+.menu a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -112,22 +157,22 @@ ul .slider{
     position: relative;
 }
 
-.slider li:target{
+.slider li:target {
     opacity: 1;
 }
 
-.block{
+.block {
     background-color: burlywood;
     display: inline-block;
     border: solid 5px;
 }
 
-.indumentaria1{
+.indumentaria1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.calzado{
+.calzado {
     background-color: white;
     color: black;
     padding: 0%;
@@ -139,11 +184,11 @@ ul .slider{
     align-items: center;
 }
 
-.calzado1{
+.calzado1 {
     padding: 5px;
 }
 
-.ropa{
+.ropa {
     background-color: white;
     color: black;
     padding: 0%;
@@ -155,11 +200,11 @@ ul .slider{
     align-items: center;
 }
 
-.ropa1{
+.ropa1 {
     padding: 5px;
 }
 
-.accesorios{
+.accesorios {
     background-color: white;
     color: black;
     padding: 0%;
@@ -171,11 +216,11 @@ ul .slider{
     align-items: center;
 }
 
-.accesorios1{
+.accesorios1 {
     padding: 5px;
 }
 
-.verano{
+.verano {
     background-color: white;
     color: black;
     padding: 0%;
@@ -187,7 +232,7 @@ ul .slider{
     align-items: center;
 }
 
-.invierno{
+.invierno {
     background-color: white;
     color: black;
     padding: 0%;
@@ -199,54 +244,55 @@ ul .slider{
     align-items: center;
 }
 
-.modeloHombre{
+.modeloHombre {
     position: absolute;
     right: 80px;
     top: 250px;
 }
 
-.modeloMujer{
+.modeloMujer {
     position: absolute;
     right: 80px;
     top: 250px;
 }
 
-.ropaInvierno{
+.ropaInvierno {
     position: absolute;
     right: 80px;
     top: 250px;
 }
 
-.ropaVerano{
+.ropaVerano {
     position: absolute;
     right: 180px;
     top: 550px;
 }
 
-.grid1{
+.grid1 {
     display: grid;
-    
+
 }
+
 /*  --FOOTER--  */
 
-.footer{
+.footer {
     background-color: burlywood;
     height: 10vh;
     width: 100%;
 }
 
-.inline{
+.inline {
     background-color: burlywood;
     display: inline;
 }
 
-.inline img{
+.inline img {
     height: 40px;
     width: 40px;
     list-style: none;
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -255,15 +301,15 @@ ul .slider{
 
 /*  --ETIQUETAS--  */
 
-span a{
+span a {
     color: black;
 }
 
-img{
+img {
     width: 400px;
 }
 
-ul li{
+ul li {
     margin: 0;
     padding: 0;
     list-style: none;

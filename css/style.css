@@ -32,10 +32,10 @@
 
 .header {
     display: flex;
-    background-color: burlywood;
     height: 20vh;
     justify-content: space-evenly;
     align-items: center;
+    background-image: linear-gradient(to bottom, burlywood, bisque);
 }
 
 .logo{
@@ -109,6 +109,11 @@
     padding: .5rem;
 }
 
+.mainContact button:hover{
+    transform: scale(1.2);
+
+}
+
 .wpp {
     position: fixed;
     width: 65px;
@@ -173,6 +178,11 @@ ul .slider {
     font-size: 20px;
     border-radius: 100%;
     position: relative;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 .slider li:target {
@@ -291,10 +301,30 @@ ul .slider {
 
 }
 
+.form input{
+    margin-top: .5rem;
+}
+
+.form textarea{
+    margin-top: .5rem;
+}
+
+.form input:focus{
+    transform: scale(1.06);
+    transition: .3s;
+    outline: none;
+}
+
+.form textarea:focus{
+    transform: scale(1.03);
+    transition: .3s;
+    outline: none;
+}
+
 /*  --FOOTER--  */
 
 .footer {
-    background-color: burlywood;
+    background-image: linear-gradient(to top, burlywood, bisque);
     height: 10vh;
     width: 100%;
 }

@@ -31,6 +31,17 @@
 
 /*  --HEADER--  */
 
+.colorLetraHeader{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.divHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
     height: 20vh;
@@ -50,6 +61,7 @@
     border: solid 3px;
     display: inline-block;
     padding: .5rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -327,6 +339,14 @@ ul .slider {
 }
 
 /* --BOOTSTRAP-- */
+
+.navBarHeader{
+    background: rgb(236, 199, 150) !important;
+}
+
+.navBarHeader a:hover{
+    color: white;
+}
 
 .carouselSLide{
     display: grid;

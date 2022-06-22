@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- Icono -->
     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/000/583/775/non_2x/t-shirt-on-clothes-hanger-icon-vector.jpg">
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Mi proyecto Agustin Gomez</title>
 </head>
 
 <body>
     <div class="header">
-        <img src="./img/logo.jpg" alt="Logo" class="logo">
-        <nav class="nav">
+        <div>
+            <img src="./img/logo.jpg" alt="Logo" class="logo">
+        </div>
+        <div class="divHeader">
             <h1 class="blocki">Indumentaria Mez</h1>
-            <ul class="flexPadre">
-                <span>
-                    <a href="./index.html">Inicio</a>
-                </span>
-                <span>
-                    <a href="./hombre.html">Hombre</a>
-                </span>
-                <span>
-                    <a href="./mujer.html">Mujer</a>
-                </span>
-                <span>
-                    <a href="estaciones.html">Estaciones</a>
-                </span>
-                <span>
-                    <a href="./contacto.html">Contacto</a>
-                </span>
-            </ul>
-        </nav>
+            <nav class="navBarHeader navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="colorLetraHeader navbar-brand" href="./index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="colorLetraHeader nav-link" aria-current="page" href="./hombre.html">Hombre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="colorLetraHeader nav-link" href="./mujer.html">Mujer</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="colorLetraHeader nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Estaciones
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Invierno</a></li>
+                                    <li><a class="dropdown-item" href="#">Verano</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="colorLetraHeader nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
     <main class="main">
         <h1 class="block">Ropa de hombre</h1>

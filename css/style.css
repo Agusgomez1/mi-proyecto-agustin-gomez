@@ -358,9 +358,28 @@ ul .slider {
 /*  --FOOTER--  */
 
 .footer {
+    display: flex;
     background-image: linear-gradient(to top, burlywood, bisque);
     height: 10vh;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconosFooterOrden{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconosFooter{
+    font-size: 1.3rem;
+}
+
+.tituloFooter{
+    background-color: rgb(240, 214, 181);  
+    font-size: 1.5rem;
+    margin-to;
 }
 
 .inline {
@@ -379,6 +398,12 @@ ul .slider {
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
+}
+
+.logoFooter{
+    border: solid 1px;
+    height: 5rem;
+    width: 5rem;
 }
 
 /*  --ETIQUETAS--  */

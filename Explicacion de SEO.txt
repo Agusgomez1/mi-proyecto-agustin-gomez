@@ -1,0 +1,5 @@
+Explicacion de SEO aplicado en mi proyecto:
+-Agregue keywords en cada pagina web de mi sitio.
+-Agregue descriptions en cada pagina web de mi sitio.
+-Optimice las imagenes ultiziadas en mi sitio.
+-Agrupe las pages en un mismo desplegable.

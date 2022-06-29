@@ -1,0 +1,21 @@
+/*  --GRID-- */
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .main {
+    background-color: bisque;
+    grid-area: main;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }

@@ -1,0 +1,19 @@
+/* --BOOTSTRAP-- */
+
+.navBarHeader {
+    background: rgb(236, 199, 150) !important;
+  
+    a:hover {
+      color: white;
+    }
+  }
+  
+  .carouselSLide {
+    display: flex;
+    padding: 2rem 8rem;
+  }
+  
+  .imagenSlide {
+    height: 65vh;
+    width: 100%;
+  }

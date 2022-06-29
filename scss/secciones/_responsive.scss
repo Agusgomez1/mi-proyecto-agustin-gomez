@@ -1,0 +1,20 @@
+/*  --RESPONSIVE-- */
+/* MOBILE LAST = MAX-WIDTH */
+@media (max-width: 768px) {
+    .grilla {
+      grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+    }
+  
+    .header {
+      width: 1200px;
+      height: 20vh;
+    }
+  
+    .main {
+      height: 70vh;
+    }
+  
+    .footer {
+      height: 10vh;
+    }
+  }

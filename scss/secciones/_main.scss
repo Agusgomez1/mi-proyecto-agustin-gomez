@@ -1,214 +1,247 @@
+
 /*  --MAIN-- */
 
 .main {
-    background-color: bisque;
-    margin-top: 0px;
-    height: 70vh;
-  }
-  
-  .mainContact {
-    display: grid;
-    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMYoKQIx6Bneed6rxTk2P_ojCyYoyHc-IFbdSg=w1080-h608-p-no-v0);
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(85%);
-    justify-items: center;
-    align-items: center;
-  
-    div {
-      border: solid 2px;
-      background-color: burlywood;
-      text-align: center;
-      padding: .5rem;
-    }
-  
-    button:hover {
-      transform: scale(1.2);
-    }
-  }
-  
-  .wpp {
-    position: fixed;
-    width: 65px;
-    height: 65px;
-    bottom: 5px;
-    right: 5px;
-  }
-  
-  .container {
-    margin: auto;
-    width: 1200px;
-    height: 550px;
-  }
-  
-  .back1 {
-    background-color: bisque;
-  }
-  
-  ul .slider {
-    position: relative;
-    width: 1200px;
-    height: 550px;
-  }
-  
-  .slider {
-    li {
-      position: absolute;
-      opacity: 0;
-      width: inherit;
-      height: inherit;
-      transition: opacity .5s;
-    }
-  
-    img {
-      width: 1200px;
-      height: 550px;
-      object-fit: cover;
-    }
-  
-    li:first-child {
-      opacity: 1;
-    }
-  }
-  
-  .menu {
+  display: flex;
+  background-color: bisque;
+  margin-top: 0px;
+  height: 70vh;
+  justify-content: space-evenly;
+}
+
+.mainContact {
+  display: grid;
+  background-image: url(https://lh3.googleusercontent.com/p/AF1QipMYoKQIx6Bneed6rxTk2P_ojCyYoyHc-IFbdSg=w1080-h608-p-no-v0);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(85%);
+  justify-items: center;
+  align-items: center;
+
+  div {
+    border: solid 2px;
+    background-color: burlywood;
     text-align: center;
-    margin: 20px;
-    display: flex;
-    height: 110%;
-    align-items: flex-end;
-    justify-content: center;
-  
-    li {
-      display: inline-block;
-      text-align: center;
-    }
-  
-    a {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      background-color: black;
-      padding: 10px;
-      width: 20px;
-      height: 20px;
-      font-size: 20px;
-      border-radius: 100%;
-      position: relative;
-  
-      &:hover {
-        transform: scale(1.1);
-        transition: .3s;
-      }
-    }
+    padding: .5rem;
   }
-  
-  .slider li:target {
+
+  button:hover {
+    transform: scale(1.2);
+  }
+}
+
+.wpp {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 5px;
+  right: 5px;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+  height: 550px;
+}
+
+.back1 {
+  background-color: bisque;
+}
+
+ul .slider {
+  position: relative;
+  width: 1200px;
+  height: 550px;
+}
+
+.slider {
+  li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+  }
+
+  img {
+    width: 1200px;
+    height: 550px;
+    object-fit: cover;
+  }
+
+  li:first-child {
     opacity: 1;
   }
-  
-  .block {
-    background-color: burlywood;
+}
+
+.menu {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  height: 110%;
+  align-items: flex-end;
+  justify-content: center;
+
+  li {
     display: inline-block;
-    border: solid 5px;
+    text-align: center;
   }
-  
-  .indumentaria1 {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .calzado {
-    background-color: white;
-    color: black;
-    padding: 0%;
-    width: 25%;
-    height: 25px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .calzado1 {
-    padding: 5px;
-  }
-  
-  .ropa {
-    background-color: white;
-    color: black;
-    padding: 0%;
-    width: 25%;
-    height: 25px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .ropa1 {
-    padding: 5px;
-  }
-  
-  .accesorios {
-    background-color: white;
-    color: black;
-    padding: 0%;
-    width: 25%;
-    height: 25px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .accesorios1 {
-    padding: 5px;
-  }
-  
-  .verano, .invierno {
-    background-color: white;
-    color: black;
-    padding: 0%;
-    width: 25%;
-    height: 25px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .modeloHombre, .modeloMujer, .ropaInvierno {
-    position: absolute;
-    right: 80px;
-    top: 250px;
-  }
-  
-  .ropaVerano {
-    position: absolute;
-    right: 180px;
-    top: 550px;
-  }
-  
-  .grid1 {
-    display: grid;
-  }
-  
-  .form {
-    input, textarea {
-      margin-top: .5rem;
-    }
-  
-    input:focus {
-      transform: scale(1.06);
+
+  a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
       transition: .3s;
-      outline: none;
-    }
-  
-    textarea:focus {
-      transform: scale(1.03);
-      transition: .3s;
-      outline: none;
     }
   }
+}
+
+.slider li:target {
+  opacity: 1;
+}
+
+.block {
+  background-color: burlywood;
+  display: inline-block;
+  border: solid 5px;
+}
+
+.indumentaria1 {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.calzado {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 15rem;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.calzado1 {
+  padding: 5px;
+}
+
+.ropa {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 15rem;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ropa1 {
+  padding: 5px;
+}
+
+.accesorios {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 15rem;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.accesorios1 {
+  padding: 5px;
+}
+
+.deportes {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 15rem;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.verano, .invierno {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 25%;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ropaInvierno {
+  position: absolute;
+  right: 80px;
+  top: 250px;
+}
+
+.modeloHombre, .modeloMujer {
+  right: 80px;
+  top: 250px;
+}
+
+.fotoMujer, .fotoHombre {
+  display: flex;
+  margin: 5rem;
+}
+
+.mainMujer, .mainHombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  align-items: stretch;
+}
+
+.ropaVerano {
+  position: absolute;
+  right: 180px;
+  top: 550px;
+}
+
+.grid1 {
+  display: grid;
+}
+
+.form {
+  input, textarea {
+    margin-top: .5rem;
+  }
+
+  input:focus {
+    transform: scale(1.06);
+    transition: .3s;
+    outline: none;
+  }
+
+  textarea:focus {
+    transform: scale(1.03);
+    transition: .3s;
+    outline: none;
+  }
+}

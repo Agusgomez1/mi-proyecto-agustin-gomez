@@ -1,20 +1,109 @@
 /*  --RESPONSIVE-- */
 /* MOBILE LAST = MAX-WIDTH */
 @media (max-width: 768px) {
-    .grilla {
-      grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-    }
-  
-    .header {
-      width: 1200px;
-      height: 20vh;
-    }
-  
-    .main {
-      height: 70vh;
-    }
-  
-    .footer {
-      height: 10vh;
-    }
+  /* INDEX */
+
+  .header {
+    height: 20%;
   }
+
+  .main {
+    height: 100%;
+  }
+
+  .carouselSLide {
+    padding: 2rem 0rem;
+  }
+
+  .footer {
+    height: 10%;
+  }
+
+  /* HOMBRE */
+
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .footer {
+    margin-bottom: 0px;
+  }
+
+  .mainHombre {
+    margin: 3rem 4rem;
+    width: 40rem;
+  }
+
+  .fotoHombre {
+    justify-content: center;
+  }
+
+  .indumentaria1 {
+    margin-top: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .block {
+    width: 35rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  /* MUJER */
+
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .mainMujer {
+    margin: 3rem 4rem;
+    width: 40rem;
+    align-items: center;
+  }
+
+  .fotoMujer {
+    justify-content: center;
+  }
+
+  .block {
+    width: 35rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  .indumentaria2 {
+    margin-top: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  /* INDEX */
+
+  .footer {
+    height: 10%;
+  }
+
+  /* HOMBRE */
+
+  .mainHombre {
+    margin: 3rem 4rem;
+    width: 10rem;
+  }
+
+  .block {
+    width: 20rem;
+    margin-left: 0rem;
+  }
+
+  /* MUJER */
+
+  .mainMujer {
+    margin: 3rem 7rem;
+    width: 10rem;
+  }
+}

@@ -1,32 +1,41 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* --BOOTSTRAP-- */
 .navBarHeader {
-  background: #ecc796 !important; }
-  .navBarHeader a:hover {
-    color: white; }
+  background: #ecc796 !important;
+}
+
+.navBarHeader a:hover {
+  color: white;
+}
 
 .carouselSLide {
   display: flex;
-  padding: 2rem 8rem; }
+  padding: 2rem 8rem;
+}
 
 .imagenSlide {
   height: 65vh;
-  width: 100%; }
+  width: 100%;
+}
 
 /*  --ETIQUETAS--  */
 span a {
-  color: black; }
+  color: black;
+}
 
 img {
-  width: 400px; }
+  width: 400px;
+}
 
 ul li {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 /*  --FOOTER--  */
 .footer {
@@ -35,95 +44,115 @@ ul li {
   height: 10vh;
   width: 100%;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+}
 
 .iconosFooterOrden {
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .iconosFooter {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+}
 
 .tituloFooter {
   background-color: #f0d6b5;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .inline {
   background-color: burlywood;
-  display: inline; }
-  .inline img {
-    height: 40px;
-    width: 40px;
-    list-style: none; }
+  display: inline;
+}
+
+.inline img {
+  height: 40px;
+  width: 40px;
+  list-style: none;
+}
 
 .redes {
   display: flex;
   justify-content: space-evenly;
   height: 100%;
-  align-items: center; }
+  align-items: center;
+}
 
 .logoFooter {
   border: solid 1px;
   height: 5rem;
-  width: 5rem; }
+  width: 5rem;
+}
 
 /*  --GRID-- */
 .grilla {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 20vh 70vh 10vh;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "header header header header""main main main main""footer footer footer footer";
+}
 
 .header {
-  grid-area: header; }
+  grid-area: header;
+}
 
 .main {
   background-color: bisque;
-  grid-area: main; }
+  grid-area: main;
+}
 
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+}
 
 /*  --HEADER--  */
 .colorLetraHeader {
   color: black;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 .divHeader {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 .header {
   display: flex;
   height: 20vh;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(to bottom, burlywood, bisque); }
+  background-image: linear-gradient(to bottom, burlywood, bisque);
+}
 
 .menuDown {
   border-radius: 0;
-  background-color: black !important; }
+  background-color: black !important;
+}
 
 .logo {
   border: solid 1px;
   height: 8rem;
-  width: 8rem; }
+  width: 8rem;
+}
 
 .blocki {
   background-color: #f0d6b5;
   border: solid 3px;
   display: inline-block;
   padding: .5rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 10rem;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .flexPadre {
   display: flex;
@@ -131,22 +160,32 @@ ul li {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
-  align-items: center; }
-  .flexPadre span {
-    padding: 5px;
-    margin: 2px;
-    font-size: 1.5rem; }
-  .flexPadre a {
-    text-decoration: none;
-    border: black; }
-    .flexPadre a:hover {
-      color: white; }
+  align-items: center;
+}
+
+.flexPadre span {
+  padding: 5px;
+  margin: 2px;
+  font-size: 1.5rem;
+}
+
+.flexPadre a {
+  text-decoration: none;
+  border: black;
+}
+
+.flexPadre a:hover {
+  color: white;
+}
 
 /*  --MAIN-- */
 .main {
+  display: flex;
   background-color: bisque;
   margin-top: 0px;
-  height: 70vh; }
+  height: 70vh;
+  justify-content: space-evenly;
+}
 
 .mainContact {
   display: grid;
@@ -156,49 +195,61 @@ ul li {
   background-size: cover;
   filter: opacity(85%);
   justify-items: center;
-  align-items: center; }
-  .mainContact div {
-    border: solid 2px;
-    background-color: burlywood;
-    text-align: center;
-    padding: .5rem; }
-  .mainContact button:hover {
-    transform: scale(1.2); }
+  align-items: center;
+}
+
+.mainContact div {
+  border: solid 2px;
+  background-color: burlywood;
+  text-align: center;
+  padding: .5rem;
+}
+
+.mainContact button:hover {
+  transform: scale(1.2);
+}
 
 .wpp {
   position: fixed;
   width: 65px;
   height: 65px;
   bottom: 5px;
-  right: 5px; }
+  right: 5px;
+}
 
 .container {
   margin: auto;
   width: 1200px;
-  height: 550px; }
+  height: 550px;
+}
 
 .back1 {
-  background-color: bisque; }
+  background-color: bisque;
+}
 
 ul .slider {
   position: relative;
   width: 1200px;
-  height: 550px; }
+  height: 550px;
+}
 
 .slider li {
   position: absolute;
   opacity: 0;
   width: inherit;
   height: inherit;
-  transition: opacity .5s; }
+  transition: opacity .5s;
+}
 
 .slider img {
   width: 1200px;
   height: 550px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .slider li:first-child {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .menu {
   text-align: center;
@@ -206,80 +257,118 @@ ul .slider {
   display: flex;
   height: 110%;
   align-items: flex-end;
-  justify-content: center; }
-  .menu li {
-    display: inline-block;
-    text-align: center; }
-  .menu a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-    position: relative; }
-    .menu a:hover {
-      transform: scale(1.1);
-      transition: .3s; }
+  justify-content: center;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.menu a:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
 
 .slider li:target {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .block {
   background-color: burlywood;
   display: inline-block;
-  border: solid 5px; }
+  border: solid 5px;
+}
 
 .indumentaria1 {
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
+
+.indumentaria2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .calzado {
   background-color: white;
   color: black;
   padding: 0%;
-  width: 25%;
+  width: 15rem;
   height: 25px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+}
 
 .calzado1 {
-  padding: 5px; }
+  padding: 5px;
+}
 
 .ropa {
   background-color: white;
   color: black;
   padding: 0%;
-  width: 25%;
+  width: 15rem;
   height: 25px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+}
 
 .ropa1 {
-  padding: 5px; }
+  padding: 5px;
+}
 
 .accesorios {
   background-color: white;
   color: black;
   padding: 0%;
-  width: 25%;
+  width: 15rem;
   height: 25px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+}
 
 .accesorios1 {
-  padding: 5px; }
+  padding: 5px;
+}
 
-.verano, .invierno {
+.deportes {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  width: 15rem;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.verano,
+.invierno {
   background-color: white;
   color: black;
   padding: 0%;
@@ -288,43 +377,182 @@ ul .slider {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+}
 
-.modeloHombre, .modeloMujer, .ropaInvierno {
+.ropaInvierno {
   position: absolute;
   right: 80px;
-  top: 250px; }
+  top: 250px;
+}
+
+.modeloHombre {
+  right: 80px;
+  top: 250px;
+}
+
+.modeloMujer {
+  right: 80px;
+  top: 250px;
+}
+
+.fotoMujer {
+  display: flex;
+  margin: 5rem;
+}
+
+.fotoHombre {
+  display: flex;
+  margin: 5rem;
+}
+
+.mainMujer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  align-items: stretch;
+}
+
+.mainHombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  align-items: stretch;
+}
 
 .ropaVerano {
   position: absolute;
   right: 180px;
-  top: 550px; }
+  top: 550px;
+}
 
 .grid1 {
-  display: grid; }
+  display: grid;
+}
 
-.form input, .form textarea {
-  margin-top: .5rem; }
+.form input,
+.form textarea {
+  margin-top: .5rem;
+}
 
 .form input:focus {
   transform: scale(1.06);
   transition: .3s;
-  outline: none; }
+  outline: none;
+}
 
 .form textarea:focus {
   transform: scale(1.03);
   transition: .3s;
-  outline: none; }
+  outline: none;
+}
 
 /*  --RESPONSIVE-- */
 /* MOBILE LAST = MAX-WIDTH */
 @media (max-width: 768px) {
-  .grilla {
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+  /* INDEX */
   .header {
-    width: 1200px;
-    height: 20vh; }
+    height: 20%;
+  }
+
   .main {
-    height: 70vh; }
+    height: 100%;
+  }
+
+  .carouselSLide {
+    padding: 2rem 0rem;
+  }
+
   .footer {
-    height: 10vh; } }
+    height: 10%;
+  }
+
+  /* HOMBRE */
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .footer {
+    margin-bottom: 0px;
+  }
+
+  .mainHombre {
+    margin: 3rem 4rem;
+    width: 40rem;
+  }
+
+  .fotoHombre {
+    justify-content: center;
+  }
+
+  .indumentaria1 {
+    margin-top: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .block {
+    width: 35rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  /* MUJER */
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .mainMujer {
+    margin: 3rem 4rem;
+    width: 40rem;
+    align-items: center;
+  }
+
+  .fotoMujer {
+    justify-content: center;
+  }
+
+  .block {
+    width: 35rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  .indumentaria2 {
+    margin-top: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  /* INDEX */
+  .footer {
+    height: 10%;
+  }
+
+  /* HOMBRE */
+  .mainHombre {
+    margin: 3rem 4rem;
+    width: 10rem;
+  }
+
+  .block {
+    width: 20rem;
+    margin-left: 0rem;
+  }
+
+
+  /* MUJER */
+  .mainMujer {
+    margin: 3rem 7rem;
+    width: 10rem;
+  }
+}

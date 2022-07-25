@@ -386,6 +386,19 @@ ul .slider {
   top: 250px;
 }
 
+.modeloVerano{
+  right: 80px;
+  top: 250px;
+  width: 500px;
+
+}
+
+.modeloInvierno{
+  right: 80px;
+  top: 250px;
+  width: 500px;
+}
+
 .modeloHombre {
   right: 80px;
   top: 250px;
@@ -396,6 +409,17 @@ ul .slider {
   top: 250px;
 }
 
+.fotoInvierno{
+  display: flex;
+  margin: 5rem;
+  
+}
+
+.fotoVerano{
+  display: flex;
+  margin: 5rem;
+}
+
 .fotoMujer {
   display: flex;
   margin: 5rem;
@@ -404,6 +428,23 @@ ul .slider {
 .fotoHombre {
   display: flex;
   margin: 5rem;
+}
+
+.mainVerano{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem;
+    align-items: flex-end;
+
+}
+
+.mainInvierno{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem;
+    align-items: flex-end;
 }
 
 .mainMujer {
@@ -466,9 +507,7 @@ ul .slider {
     padding: 2rem 0rem;
   }
 
-  .footer {
-    height: 10%;
-  }
+ 
 
   /* HOMBRE */
   .main {
@@ -478,11 +517,14 @@ ul .slider {
 
   .footer {
     margin-bottom: 0px;
+    height: 20vh;
+    
   }
 
   .mainHombre {
-    margin: 3rem 4rem;
+    margin-top: 2rem;
     width: 40rem;
+    align-items: center;
   }
 
   .fotoHombre {
@@ -501,6 +543,38 @@ ul .slider {
     margin-left: 3rem;
   }
 
+  /* INVIERNO */
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .mainInvierno {
+    margin-top: 2rem;
+    width: 40rem;
+    align-items: center;
+  }
+
+  .fotoInvierno {
+    justify-content: center;
+  }
+
+  /* VERANO */
+  .main {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .mainVerano {
+    margin-top: 2rem;
+    width: 40rem;
+    align-items: center;
+  }
+
+  .fotoVerano {
+    justify-content: center;
+  }
+
   /* MUJER */
   .main {
     flex-direction: column;
@@ -508,7 +582,7 @@ ul .slider {
   }
 
   .mainMujer {
-    margin: 3rem 4rem;
+    margin-top: 2rem;
     width: 40rem;
     align-items: center;
   }
@@ -534,14 +608,17 @@ ul .slider {
 @media (max-width: 425px) {
 
   /* INDEX */
+  .header{
+    flex-direction: column;
+  }
+
   .footer {
     height: 10%;
   }
 
   /* HOMBRE */
   .mainHombre {
-    margin: 3rem 4rem;
-    width: 10rem;
+    width: 100%;
   }
 
   .block {
@@ -549,10 +626,29 @@ ul .slider {
     margin-left: 0rem;
   }
 
+  /* INVIERNO */
+  .mainInvierno {
+    width: 100%;
+  }
+
+  .block {
+    width: 20rem;
+    margin-left: 0rem;
+  }
+
+  /* VERANO */
+  .mainVerano{
+    width: 100%;
+  }
+
+  .block {
+    width: 20rem;
+    margin-left: 0rem;
+  }
 
   /* MUJER */
   .mainMujer {
-    margin: 3rem 7rem;
-    width: 10rem;
+    width: 100%;
   }
 }
+
